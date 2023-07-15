@@ -81,7 +81,7 @@ section {
 .home-img img {
   width: 35vw;
   border-radius: 15% 5% 15% 5%;
-  border: .2rem solid var(--main-color);
+  border: 0.2rem solid var(--main-color);
   box-shadow: 0 0 1rem var(--second-main-color);
 }
 
@@ -105,7 +105,7 @@ span {
 }
 
 .home-content p {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
 }
 
 .social-media a {
@@ -121,6 +121,7 @@ span {
   color: var(--main-color);
   margin: 3rem 1.5rem 3rem 0;
   transition: 0.5s ease;
+  box-shadow: 0 0 1rem var(--second-main-color);
 }
 
 .social-media a:hover {
@@ -144,8 +145,8 @@ span {
   position: relative;
   align-items: center;
   justify-content: center;
-  width: 25rem;
-  height: 25rem;
+  width: 40rem;
+  height: 40rem;
   border-radius: 50%;
 }
 
@@ -175,16 +176,19 @@ span {
 }
 
 .about-content h2 {
-  text-align: left;
   line-height: 1.2;
 }
 
 .about-content h3 {
-  font-size: 2.5rem;
+  display: flex;
+  font-size: 3.5rem;
+  align-items: center;
+  justify-content: center;
 }
 
 .about-content p {
-  font-size: 1.5rem;
+  text-align: center;
+  font-size: 1.8rem;
   margin: 2rem 0 3rem;
 }
 
@@ -192,9 +196,12 @@ span {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 5rem;
   padding-bottom: 7rem;
   background: var(--bg-color);
+}
+
+.skills h2 {
+  margin-bottom: 4rem;
 }
 
 .skills i {
@@ -224,14 +231,14 @@ span {
   position: relative;
   border-radius: 1.5rem;
   box-shadow: 0 0 1rem var(--main-color);
-  border: .2rem solid var(--second-main-color);
-  padding: .5rem 1.5rem;
+  border: 0.2rem solid var(--second-main-color);
+  padding: 0.5rem 1.5rem;
   z-index: 1;
   overflow: hidden;
 }
 
 .skills-box .skills-content::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -239,17 +246,15 @@ span {
   height: 100%;
   background: var(--bg-color);
   z-index: -1;
-  transition: .5s;
-
+  transition: 0.5s;
 }
 
 .skills-box .skills-content:hover::before {
-width: 100%;
+  width: 100%;
 }
 
 .skills-content .progress {
   padding: 1rem 0;
-
 }
 
 .skills-content .progress h3 {
@@ -265,9 +270,9 @@ width: 100%;
 .skills-content .progress .bar {
   height: 2.5rem;
   border-radius: 1.5rem;
-  border: .2rem solid var(--main-color);
+  border: 0.2rem solid var(--main-color);
   box-shadow: 0 0 1rem var(--second-main-color);
-  padding: .5rem;
+  padding: 0.5rem;
   margin: 1rem 0;
 }
 
@@ -342,3 +347,80 @@ width: 100%;
   width: 20%;
 }
 
+.portfolio {
+  background: var(--second-bg-color);
+}
+
+.portfolio h2 {
+  margin-bottom: 4rem;
+}
+
+.portfolio-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.portfolio-container .portfolio-box {
+  position: relative;
+  border-radius: 1.5rem;
+  box-shadow: 0 0 1rem var(--second-main-color);
+  overflow: hidden;
+  display: flex;
+}
+
+.portfolio-box img {
+  width: 100%;
+  transition: .5s ease;
+}
+
+.portfolio-box:hover img {
+  transform: scale(1.1);
+}
+
+.portfolio-box .portfolio-layer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), var(--main-color));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 0 4rem;
+  transform: translateY(100%);
+  transition: .5s ease;
+}
+
+.portfolio-box:hover .portfolio-layer {
+  transform: translateY(0);
+}
+
+.portfolio-layer h4 {
+  font-size: 3rem;
+}
+
+.portfolio-layer p {
+  font-size: 1.5rem;
+  margin: 0.3rem 0 1rem;
+}
+
+.portfolio-layer a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 5rem;
+  height: 5rem;
+  background: var(--text-color);
+  border-radius: 50%;
+  box-shadow: 0 0 1rem var(--second-main-color);
+}
+
+.portfolio-layer a i {
+  font-size: 2rem;
+  color: var(--second-bg-color);
+}
