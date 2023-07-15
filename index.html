@@ -10,11 +10,12 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <!-- custom css -->
     <link rel="stylesheet" href="css/styles.css">
-    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!-- devicons stylesheet -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
 </head>
 
 <body>
-    <!-- header design -->
+    <!-- header -->
     <header class="header">
         <a href="#" class="logo">Portfolio</a>
 
@@ -29,8 +30,7 @@
         </nav>
     </header>
 
-    <!-- home section design -->
-
+    <!-- home section -->
     <section class="home" id="home">
         <div class="home-content">
             <h3>Hello, It's Me</h3>
@@ -42,7 +42,8 @@
                 <a href="#"><i class='bx bxl-facebook'></i></a>
                 <a href="#"><i class='bx bxl-instagram'></i></a>
                 <a href="#"><i class='bx bxl-twitter'></i></a>
-                <a href="#"><i class='bx bxl-linkedin-square'></i></a>
+                <!-- amint regisztralok linkedin-re aktivalom ezt a hivatkozast is -->
+                <!-- <a href="#"><i class='bx bxl-linkedin-square'></i></a> -->
             </div>
         </div>
         <div class="home-img">
@@ -50,14 +51,15 @@
         </div>
     </section>
 
-    <!-- about section design -->
-
+    <!-- about section -->
     <section class="about" id="about">
+
+        <h2 class="heading">About <span>Me</span></h2>
         <div class="about-img">
             <img src="images\1671867343476.jpg" alt="">
+            <span class="circle-spin"></span>
         </div>
         <div class="about-content">
-            <h2 class="heading">About <span>Me</span></h2>
             <h3>Full-Stack Web Developer</h3>
             <p>I am a full-stack web developer with a strong interest in machine learning and artificial intelligence,
                 specializing in Python's TensorFlow library. After completing my IT studies in Hungary, I began my
@@ -68,7 +70,150 @@
                 exciting field.</p>
         </div>
     </section>
+
+    <!-- skill/experience section -->
+    <section class="skills" id="skills">
+        <h2 class="heading">My <span>skills</span></h2>
+        <div class="skills-row">
+
+            <div class="skills-column">
+                <h3 class="title">Personal skills</h3>
+                <div class="skills-box">
+                    <div class="skills-content">
+
+                        <div class="progress">
+                            <h3>
+                                Responsibility <span>95%</span>
+                            </h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <h3>
+                                Leadership <span>95%</span>
+                            </h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <h3>
+                                Communication <span>90%</span>
+                            </h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <h3>
+                                Problem solving <span>90%</span>
+                            </h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <h3>
+                                Critical thinking <span>85%</span>
+                            </h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <h3>
+                                Motivation <span>80%</span>
+                            </h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <h3>
+                                Teamwork <span>80%</span>
+                            </h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <h3>
+                                Conflict management <span>65%</span>
+                            </h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skills-column">
+                <h3 class="title">Coding skills</h3>
+                <div class="skills-box">
+                    <div class="skills-content">
+                        <div class="progress">
+                            <h3><i class="devicon-html5-plain colored"></i>HTML <span>90%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <h3>
+                                <i class="devicon-css3-plain colored"></i>CSS <span>85%</span>
+                            </h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <h3>
+                                <i class="devicon-bootstrap-plain-wordmark colored"></i>
+                                Bootstrap <span>80%</span>
+                            </h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <h3>
+                                <i class="devicon-javascript-plain colored"></i>
+                                Javascript <span>80%</span>
+                            </h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <h3>
+                                <i class="devicon-mongodb-plain-wordmark colored"></i>
+                                MongoDB <span>75%</span>
+                            </h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <h3>
+                                <i class="devicon-nodejs-plain-wordmark colored"></i>
+                                Node.JS <span>70%</span>
+                            </h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <h3>
+                                <i class="devicon-react-original colored"></i>
+                                React <span>60%</span>
+                            </h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <h3>
+                                <i class="devicon-python-plain colored"></i>
+                                Python <span>20%</span>
+                            </h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </section>
+
     <!-- custom js -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script src="js/script.js"></script>
 </body>
 
