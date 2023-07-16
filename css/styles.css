@@ -47,6 +47,10 @@ section {
   z-index: 100;
 }
 
+.header.sticky {
+  border-bottom: 0.1rem solid var(--second-main-color);
+}
+
 .logo {
   font-size: 2.5rem;
   color: var(--text-color);
@@ -184,6 +188,7 @@ span {
   font-size: 3.5rem;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 
 .about-content p {
@@ -434,10 +439,10 @@ span {
 }
 
 .portfolio-layer a:hover {
- scale: 1.1;
- border: 0.2rem solid var(--second-main-color);
- color: var(--second-main-color);
- box-shadow: 0 0 1rem var(--text-color);
+  scale: 1.1;
+  border: 0.2rem solid var(--second-main-color);
+  color: var(--second-main-color);
+  box-shadow: 0 0 1rem var(--text-color);
 }
 
 .btn-box {
@@ -491,7 +496,7 @@ span {
 }
 
 .contact {
-min-height: 90vh;
+  min-height: 90vh;
 }
 
 .contact h2 {
@@ -527,9 +532,8 @@ min-height: 90vh;
   color: var(--text-color);
   background: transparent;
   border-radius: 1rem;
-  border: .2rem solid var(--second-main-color);
+  border: 0.2rem solid var(--second-main-color);
   box-shadow: 0 0 1rem var(--main-color);
-
 }
 
 .contact form .input-box .input-field input::placeholder,
@@ -546,19 +550,19 @@ min-height: 90vh;
   background: var(--second-bg-color);
   border-radius: 1rem;
   z-index: -1;
-  transition: .5s;
+  transition: 0.5s;
 }
 
-.contact form .input-box .input-field input:focus~.focus,
-.contact form .input-box .input-field input:valid~.focus,
-.contact form .textarea-field textarea:focus~.focus,
-.contact form .textarea-field textarea:valid~.focus {
-width: 100%;
+.contact form .input-box .input-field input:focus ~ .focus,
+.contact form .input-box .input-field input:valid ~ .focus,
+.contact form .textarea-field textarea:focus ~ .focus,
+.contact form .textarea-field textarea:valid ~ .focus {
+  width: 100%;
 }
 
 .contact form .textarea-field {
   position: relative;
-  margin: .8rem 0 2.7rem;
+  margin: 0.8rem 0 2.7rem;
   display: flex;
 }
 
@@ -570,6 +574,7 @@ width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  text-align: left;
   flex-wrap: wrap;
   padding: 2rem 9%;
   background: var(--second-bg-color);
@@ -588,15 +593,63 @@ width: 100%;
   background: transparent;
   border: 0.2rem solid var(--main-color);
   border-radius: 50%;
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: var(--main-color);
   transition: 0.5s ease;
   box-shadow: 0 0 1rem var(--second-main-color);
-
 }
 
 .footer a:hover {
   background: var(--main-color);
   color: var(--second-bg-color);
   box-shadow: 0 0 1rem var(--main-color);
+}
+
+/* BREAKPOINTS */
+@media (max-width: 1200px) {
+  html {
+    font-size: 55%;
+  }
+}
+
+@media (max-width: 991px) {
+  .header {
+    padding: 2rem 3%;
+  }
+
+  section {
+    padding: 10rem 3% 2rem;
+  }
+
+  .footer {
+    padding: 2rem 3%;
+  }
+}
+
+@media (max-width: 768px) {
+  #menu-icon {
+    display: block;
+  }
+  .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 1rem 3%;
+    background: var(--bg-color);
+    border-top: .1rem solid var(--second-main-color);
+    box-shadow: 0 .5rem 1rem var(--main-color);
+    display: none;
+  }
+
+  .navbar.active {
+    display: block;
+    transition: .5s ease;
+  }
+
+  .navbar a {
+    display: block;
+    font-size: 2rem;
+    margin: 3rem 0;
+  }
 }
