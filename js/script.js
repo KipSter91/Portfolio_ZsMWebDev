@@ -2,7 +2,7 @@
 let menuIcon = document.querySelector("#menu-icon");
 let navBar = document.querySelector(".navbar");
 
-menuIcon.onclick =  () => {
+menuIcon.onclick = () => {
     menuIcon.classList.toggle("bx-x");
     navBar.classList.toggle("active");
 }
@@ -32,13 +32,25 @@ window.onscroll = () => {
             });
         };
     });
-// sticky navbar
-let header = document.querySelector("header");
+    // sticky navbar
+    let header = document.querySelector("header");
 
-header.classList.toggle("sticky", window.scrollY > 100);
+    header.classList.toggle("sticky", window.scrollY > 100);
 
-// remove toggle icon and navbar function
+    // remove toggle icon and navbar function
     menuIcon.classList.remove("bx-x");
     navBar.classList.remove("active");
 
 };
+
+// scroll reveal
+ScrollReveal({
+    reset: true,
+    distance: "80px",
+    duration: 2000,
+    delay: 200 
+});
+ScrollReveal().reveal('.home-content, .heading, .footer', { origin: "top"});
+ScrollReveal().reveal('.home-content h1', { origin: "left"});
+ScrollReveal().reveal('.home-content p', { origin: "right"});
+ScrollReveal().reveal('.skills-column, .about-content, .about-img, .home-img, .portfolio-container, .contact', { origin: "bottom" });

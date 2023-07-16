@@ -87,6 +87,7 @@ section {
   border-radius: 15% 5% 15% 5%;
   border: 0.2rem solid var(--main-color);
   box-shadow: 0 0 1rem var(--second-main-color);
+  animation: floatImage 4s ease infinite;
 }
 
 .home-content h3 {
@@ -370,7 +371,7 @@ span {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
-  gap: 2.5rem;
+  gap: 4rem;
 }
 
 .portfolio-container .portfolio-box {
@@ -403,7 +404,6 @@ span {
   align-items: center;
   flex-direction: column;
   text-align: center;
-  padding: 0 4rem;
   transform: translateY(100%);
   transition: 0.5s ease;
 }
@@ -610,9 +610,13 @@ span {
 }
 
 /* BREAKPOINTS */
-@media (max-width: 1200px) {
+@media (max-width: 1700px) {
   html {
     font-size: 55%;
+  }
+
+  .portfolio-container {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -627,6 +631,18 @@ span {
 
   .footer {
     padding: 2rem 3%;
+  }
+
+  .portfolio {
+    padding-bottom: 7rem;
+  }
+
+  .portfolio-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .contact {
+    min-height: auto;
   }
 }
 
@@ -674,11 +690,33 @@ span {
     margin-top: 4rem;
   }
 
+  .portfolio h2 {
+    margin-bottom: 3rem;
+  }
 }
+
+@media (max-width: 450px) {
+  html {
+    font-size: 50%
+  }
+  }
 
 /* KEYFRAMES */
 @keyframes aboutSpinner {
   100% {
     transform: translate(-50%, -50%) rotate(360deg);
   }
+}
+
+@keyframes floatImage {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-2.5rem);
+  }
+  0% {
+    transform: translateY(0);
+  }
+
 }
