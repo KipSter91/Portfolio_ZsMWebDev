@@ -149,8 +149,8 @@ span {
   position: relative;
   align-items: center;
   justify-content: center;
-  width: 40rem;
-  height: 40rem;
+  width: 30rem;
+  height: 30rem;
   border-radius: 50%;
 }
 
@@ -172,6 +172,7 @@ span {
   border-bottom: 0.2rem solid var(--second-bg-color);
   border-left: 0.2rem solid var(--main-color);
   border-right: 0.2rem solid var(--main-color);
+  animation: aboutSpinner 8s linear infinite;
 }
 
 .heading {
@@ -193,6 +194,7 @@ span {
 
 .about-content p {
   text-align: center;
+  line-height: 1.5;
   font-size: 1.8rem;
   margin: 2rem 0 3rem;
 }
@@ -366,7 +368,7 @@ span {
 
 .portfolio-container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   align-items: center;
   gap: 2.5rem;
 }
@@ -374,6 +376,7 @@ span {
 .portfolio-container .portfolio-box {
   position: relative;
   border-radius: 1.5rem;
+  border: 0.2rem solid var(--main-color);
   box-shadow: 0 0 1rem var(--second-main-color);
   overflow: hidden;
   display: flex;
@@ -394,7 +397,7 @@ span {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0.1), var(--main-color));
+  background: linear-gradient(#1f242ddd,#323946d8);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -410,11 +413,13 @@ span {
 }
 
 .portfolio-layer h4 {
+  margin-top: 3rem;
   font-size: 3rem;
 }
 
 .portfolio-layer p {
-  font-size: 1.5rem;
+  color: var(--text-color);
+  font-size: 4rem;
   margin: 0.3rem 0 1rem;
 }
 
@@ -425,11 +430,10 @@ span {
   width: 4rem;
   height: 4rem;
   background: transparent;
-  border: 0.2rem solid var(--text-color);
+  border: 0.2rem solid var(--main-color);
   border-radius: 50%;
   font-size: 2rem;
-  color: var(--text-color);
-  margin: 3rem 1.5rem 3rem 0;
+  color: var(--main-color);
   transition: 0.5s ease;
   box-shadow: 0 0 1rem var(--second-main-color);
 }
@@ -442,7 +446,7 @@ span {
   scale: 1.1;
   border: 0.2rem solid var(--second-main-color);
   color: var(--second-main-color);
-  box-shadow: 0 0 1rem var(--text-color);
+  box-shadow: 0 0 1rem var(--main-color);
 }
 
 .btn-box {
@@ -651,5 +655,30 @@ span {
     display: block;
     font-size: 2rem;
     margin: 3rem 0;
+  }
+
+  .home {
+    flex-direction: column;
+  }
+
+  .home-content h3 {
+    font-size: 2rem;
+  }
+
+  .home-content h1 {
+    font-size: 5rem;
+  }
+
+  .home-img img {
+    width: 70vw;
+    margin-top: 4rem;
+  }
+
+}
+
+/* KEYFRAMES */
+@keyframes aboutSpinner {
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
   }
 }

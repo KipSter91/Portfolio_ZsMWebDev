@@ -1,4 +1,4 @@
-// toggle navbar function
+// toggle icon and navbar function
 let menuIcon = document.querySelector("#menu-icon");
 let navBar = document.querySelector(".navbar");
 
@@ -37,5 +37,8 @@ let header = document.querySelector("header");
 
 header.classList.toggle("sticky", window.scrollY > 100);
 
+// remove toggle icon and navbar function
+    menuIcon.classList.remove("bx-x");
+    navBar.classList.remove("active");
 
 };
