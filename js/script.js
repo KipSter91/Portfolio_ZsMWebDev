@@ -50,7 +50,6 @@ ScrollReveal({
     duration: 2000,
     delay: 200 
 });
-ScrollReveal().reveal('.home-content, .heading, .footer', { origin: "top"});
+ScrollReveal().reveal('.home-content, .heading, .contact', { origin: "top"});
 ScrollReveal().reveal('.home-content h1', { origin: "left"});
-ScrollReveal().reveal('.home-content p', { origin: "right"});
 ScrollReveal().reveal('.skills-column, .about-content, .about-img, .home-img, .portfolio-container, .contact', { origin: "bottom" });
