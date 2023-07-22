@@ -48,8 +48,16 @@ ScrollReveal({
     reset: true,
     distance: "80px",
     duration: 2000,
-    delay: 200 
+    delay: 200
 });
-ScrollReveal().reveal('.home-content, .heading, .contact', { origin: "top"});
-ScrollReveal().reveal('.home-content h1', { origin: "left"});
+ScrollReveal().reveal('.home-content, .heading', { origin: "top" });
+ScrollReveal().reveal('.home-content h1', { origin: "left" });
 ScrollReveal().reveal('.skills-column, .about-content, .about-img, .home-img, .portfolio-container, .contact', { origin: "bottom" });
+
+//Toggle dark/light mode
+
+const toggleMode = document.getElementById("checkbox");
+
+checkbox.addEventListener("click", () => {
+    document.body.classList.toggle("dark");
+})
