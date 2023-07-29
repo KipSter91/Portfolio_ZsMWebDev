@@ -12,8 +12,8 @@
 }
 
 :root {
-  --bg-color: #1f242d;
-  --second-bg-color: #323946;
+  --bg-color: #161a20;
+  --second-bg-color: #2c313a;
   --text-color: #fff;
   --main-color: #0ef;
   --second-main-color: rgb(253, 129, 237);
@@ -83,6 +83,12 @@ section {
 .navbar a:hover,
 .navbar a.active {
   color: var(--main-color);
+}
+
+.lang img {
+  vertical-align:bottom;
+  width: 2.8rem;
+  height: 2.8rem;
 }
 
 #menu-icon {
@@ -648,6 +654,74 @@ span {
   transition: 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
+/* TOGGLE DARK/LIGHT MODE BUTTON */
+
+.toggle {
+  display: inline-block;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  position: relative;
+  margin-left: 3rem;
+}
+
+.fas {
+  color: var(--key-color);
+}
+
+.fa-moon {
+  color: rgb(234, 223, 79);
+  font-size: 1.5rem;
+}
+
+.fa-sun {
+  color: rgb(255, 136, 16);
+  font-size: 1.5rem;
+}
+
+.label {
+  margin-left: 2rem;
+  background-color: var(--text-color);
+  display: inline-flex;
+  border-radius: 50px;
+  height: 26px;
+  width: 50px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5vh;
+  cursor: pointer;
+  transition: transform 0.2s linear;
+  transition-delay: 0.1s;
+  transform: scale(1);
+  margin-left: 3rem;
+}
+
+.label:hover,
+.label:focus {
+  transform: scale(1.1);
+}
+
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.checkbox:checked + .label .ball {
+  transform: translateX(-24px);
+}
+
+.ball {
+  height: 22px;
+  width: 22px;
+  background-color: var(--bg-color);
+  position: absolute;
+  border-radius: 50%;
+  top: 2px;
+  right: 2px;
+  transition: transform 0.2s linear;
+  box-shadow: var(--shadow-color);
+}
+
 /* BREAKPOINTS */
 @media (max-width: 1700px) {
   html {
@@ -660,6 +734,7 @@ span {
 }
 
 @media (max-width: 991px) {
+
   .header {
     padding: 2rem 3%;
   }
@@ -713,6 +788,10 @@ span {
     margin: 3rem 0;
   }
 
+  .label {
+    margin-left: 0;
+  }
+
   .home {
     flex-direction: column;
   }
@@ -758,67 +837,4 @@ span {
   0% {
     transform: translateY(0);
   }
-}
-
-/* TOGGLE DARK/LIGHT MODE BUTTON */
-
-.toggle {
-  display: block;
-  position: relative;
-}
-
-.fas {
-  color: var(--key-color);
-}
-
-.fa-moon {
-  color: rgb(234, 223, 79);
-  font-size: 1.5rem;
-}
-
-.fa-sun {
-  color: rgb(255, 136, 16);
-  font-size: 1.5rem;
-}
-
-.label {
-  margin-left: 2rem;
-  background-color: var(--text-color);
-  display: inline-flex;
-  border-radius: 50px;
-  height: 26px;
-  width: 50px;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0.5vh;
-  cursor: pointer;
-  transition: transform 0.2s linear;
-  transition-delay: 0.1s;
-  transform: scale(1);
-}
-
-.label:hover,
-.label:focus {
-  transform: scale(1.1);
-}
-
-.checkbox {
-  opacity: 0;
-  position: relative;
-}
-
-.checkbox:checked + .label .ball {
-  transform: translateX(-24px);
-}
-
-.ball {
-  height: 22px;
-  width: 22px;
-  background-color: var(--bg-color);
-  position: absolute;
-  border-radius: 50%;
-  top: 2px;
-  right: 2px;
-  transition: transform 0.2s linear;
-  box-shadow: var(--shadow-color);
 }

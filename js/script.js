@@ -6,14 +6,7 @@ menuIcon.onclick = () => {
     menuIcon.classList.toggle("bx-x");
     navBar.classList.toggle("active");
 }
-// typed feature for home section
-const typed = new Typed(".text", {
-    strings: ["Warehouse Supervisor", "Full-stack Web Developer", "Husband (of Barbara Márku)", "Traveller", "Play Station 5 Fanatic... :)"],
-    typeSpeed: 50,
-    backSpeed: 50,
-    backDelay: 1000,
-    loop: true
-});
+
 // scroll sections active link
 let sections = document.querySelectorAll("section");
 let navLinks = document.querySelectorAll("header nav a");
