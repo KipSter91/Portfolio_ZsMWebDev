@@ -73,6 +73,13 @@ section {
   transition: 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
+.logo img {
+  vertical-align: bottom;
+  width: 5rem;
+  border-radius: 0.5rem;
+  margin-right: 1rem;
+}
+
 .navbar a {
   font-size: 1.8rem;
   color: var(--text-color);
@@ -86,7 +93,7 @@ section {
 }
 
 .lang img {
-  vertical-align:bottom;
+  vertical-align: bottom;
   width: 2.8rem;
   height: 2.8rem;
 }
@@ -734,7 +741,6 @@ span {
 }
 
 @media (max-width: 991px) {
-
   .header {
     padding: 2rem 3%;
   }
