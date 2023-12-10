@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@400;700&display=swap");
+
+body {
+  font-family: "Mountains of Christmas", cursive;
+  text-align: center;
+  background-color: #dab86e;
+  display: flex;
+  flex-direction: column;
+  min-height: 90vh; /* Ensure the body takes at least the full viewport height. */
+  justify-content: center; /* Center vertically. */
+  align-items: center; /* Center horizontally. */
+  margin: 0; /* Remove default margin. */
+}
+
+.header {
+  color: #00835b;
+  background-color: #fff7e2;
+  font-size: x-large;
+  width: 100%;
+  position: absolute;
+  top: 0; /* Keep the footer at the top. */
+}
+
+.xmas {
+  font-size: xx-large;
+  color: #ca244c;
+}
+
+.xmas h1 {
+  padding: 2rem;
+}
+
+.footer {
+  color: #00835b;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  background-color: #fff7e2;
+  font-size: large;
+  width: 100%;
+  position: absolute;
+  bottom: 0; /* Keep the footer at the bottom. */
+}
+
+.elements {
+  padding: 1rem;
+  height: 2rem;
+}
