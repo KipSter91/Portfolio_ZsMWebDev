@@ -228,8 +228,9 @@ span {
   text-align: center;
 }
 
-.about-content p {
-  text-align: center;
+#about-description {
+  max-width: 130rem;
+  text-align: left;
   line-height: 1.5;
   font-size: 1.8rem;
   margin: 2rem 0 3rem;

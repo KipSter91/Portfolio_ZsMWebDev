@@ -32,3 +32,7 @@ let snowfall = new Snowfall({
   color: "#ffffff", // color of a snowflake in HEX format
   zIndex: "-1", // z-index for the snowflakes canvas
 });
+
+ // Update the footer with the current year
+ const footerYear = new Date().getFullYear();
+  document.getElementById('footer').innerHTML = `Copyright &copy ${footerYear} by ZsMWebDev | Zsolt Márku`;
