@@ -18,7 +18,15 @@
   <!-- FontAwesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
     integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous" />
-</head>
+  <!-- Scripts -->
+  <script defer src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+  <script defer src="https://unpkg.com/scrollreveal"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script defer type="module" src="js/typedContent.js"></script>
+  <script defer type="module" src="js/translations.js"></script>
+  <script defer type="module" src="js/dynamic-content.js"></script>
+  <script defer src="js/script.js"></script>
+  </head>
 
 <body>
   <!-- Header -->
@@ -102,27 +110,10 @@
     </div>
   </section>
 
-
-  <!-- portfólió szekció -->
+  <!-- Portfolio section -->
   <section class="portfolio" id="portfolio">
     <h2 class="heading" id="projects-title">Eddigi <span>Projektjeim</span></h2>
     <div class="portfolio-container">
-      <div class="portfolio-box">
-        <img src="images\previews\Newsletter.JPG" alt="" />
-        <div class="portfolio-layer">
-          <h4>Newsletter SignUp (API)</h4>
-          <p>
-            <i class="devicon-html5-plain colored"></i>
-            <i class="devicon-css3-plain colored"></i>
-            <i class="devicon-bootstrap-plain-wordmark"></i>
-            <i class="devicon-javascript-plain colored"></i>
-            <i class="devicon-nodejs-plain-wordmark colored"></i>
-            <i class="bx bxl-mailchimp"></i>
-          </p>
-          <a href="https://shade-faithful-flax.glitch.me/"><i class="bx bx-link-external"></i></a>
-        </div>
-      </div>
-
       <div class="portfolio-box">
         <img src="images\previews\SimonGame.JPG" alt="" />
         <div class="portfolio-layer">
@@ -138,6 +129,34 @@
       </div>
 
       <div class="portfolio-box">
+        <img src="images\previews\ChristmasCard.png" alt="" />
+        <div class="portfolio-layer">
+          <h4>Digital Christmas Card</h4>
+          <p>
+            <i class="devicon-html5-plain colored"></i>
+            <i class="devicon-css3-plain colored"></i>
+            <i class="devicon-javascript-plain colored"></i>
+          </p>
+          <a href="projects\merrychristmas"><i class="bx bx-link-external"></i></a>
+        </div>
+      </div>
+    
+      <div class="portfolio-box">
+        <img src="images\previews\MyNotes.png" alt="" />
+        <div class="portfolio-layer">
+          <h4>MyNotes Web-App</h4>
+          <p>
+            <i class="devicon-html5-plain colored"></i>
+            <i class="devicon-css3-plain colored"></i>
+            <i class="devicon-javascript-plain colored"></i>
+            <i class="devicon-nodejs-plain-wordmark colored"></i>
+            <i class="devicon-react-original-wordmark"></i>
+          </p>
+          <a href="projects\mynotes"><i class="bx bx-link-external"></i></a>
+        </div>
+      </div>
+
+      <div class="portfolio-box">
         <img src="images\previews\ToDoList.JPG" alt="" />
         <div class="portfolio-layer">
           <h4>To Do List Web-App</h4>
@@ -149,22 +168,6 @@
             <i class="devicon-mongodb-plain-wordmark colored"></i>
           </p>
           <a href="https://todolist-zsmwebdev.onrender.com/"><i class="bx bx-link-external"></i></a>
-        </div>
-      </div>
-
-      <div class="portfolio-box">
-        <img src="images\previews\Blog.JPG" alt="" />
-        <div class="portfolio-layer">
-          <h4>Blog Web-App</h4>
-          <p>
-            <i class="devicon-html5-plain colored"></i>
-            <i class="devicon-css3-plain colored"></i>
-            <i class="devicon-bootstrap-plain-wordmark"></i>
-            <i class="devicon-javascript-plain colored"></i>
-            <i class="devicon-nodejs-plain-wordmark colored"></i>
-            <i class="devicon-mongodb-plain-wordmark colored"></i>
-          </p>
-          <a href="https://blog-web-app-zsmwebdev.onrender.com/"><i class="bx bx-link-external"></i></a>
         </div>
       </div>
 
@@ -185,17 +188,34 @@
       </div>
 
       <div class="portfolio-box">
-        <img src="images\previews\MyNotes.png" alt="" />
+        <img src="images\previews\Blog.JPG" alt="" />
         <div class="portfolio-layer">
-          <h4>MyNotes Web-App</h4>
+          <h4>Blog Web-App</h4>
           <p>
             <i class="devicon-html5-plain colored"></i>
             <i class="devicon-css3-plain colored"></i>
+            <i class="devicon-bootstrap-plain-wordmark"></i>
             <i class="devicon-javascript-plain colored"></i>
             <i class="devicon-nodejs-plain-wordmark colored"></i>
-            <i class="devicon-react-original-wordmark"></i>
+            <i class="devicon-mongodb-plain-wordmark colored"></i>
           </p>
-          <a href="projects\mynotes"><i class="bx bx-link-external"></i></a>
+          <a href="https://blog-web-app-zsmwebdev.onrender.com/"><i class="bx bx-link-external"></i></a>
+        </div>
+      </div>
+
+      <div class="portfolio-box">
+        <img src="images\previews\Newsletter.JPG" alt="" />
+        <div class="portfolio-layer">
+          <h4>Newsletter SignUp (API)</h4>
+          <p>
+            <i class="devicon-html5-plain colored"></i>
+            <i class="devicon-css3-plain colored"></i>
+            <i class="devicon-bootstrap-plain-wordmark"></i>
+            <i class="devicon-javascript-plain colored"></i>
+            <i class="devicon-nodejs-plain-wordmark colored"></i>
+            <i class="bx bxl-mailchimp"></i>
+          </p>
+          <a href="https://shade-faithful-flax.glitch.me/"><i class="bx bx-link-external"></i></a>
         </div>
       </div>
       <div class="portfolio-box">
@@ -210,18 +230,7 @@
           <a href="projects\ampcocutting\index.html"><i class="bx bx-link-external"></i></a>
         </div>
       </div>
-      <div class="portfolio-box">
-        <img src="images\previews\ChristmasCard.png" alt="" />
-        <div class="portfolio-layer">
-          <h4>Digital Christmas Card</h4>
-          <p>
-            <i class="devicon-html5-plain colored"></i>
-            <i class="devicon-css3-plain colored"></i>
-            <i class="devicon-javascript-plain colored"></i>
-          </p>
-          <a href="projects\merrychristmas"><i class="bx bx-link-external"></i></a>
-        </div>
-      </div>
+      
       <div class="portfolio-box">
         <img src="images\previews\PlateCuttingTime.png" alt="" />
         <div class="portfolio-layer">
@@ -295,14 +304,5 @@
     </div>
   </footer>
 
-  <!-- Scripts -->
-  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
-  <script src="https://unpkg.com/scrollreveal"></script>
-  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-  <script type="module" src="js/typedContent.js"></script>
-  <script type="module" src="js/translations.js"></script>
-  <script type="module" src="js/dynamic-content.js"></script>
-  <script src="js/script.js"></script>
 </body>
-
 </html>
