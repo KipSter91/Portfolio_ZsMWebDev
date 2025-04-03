@@ -218,7 +218,7 @@ Sluit je aan bij mijn reis en laten we samen de eindeloze mogelijkheden van webo
             submit: "Verzenden",
         },
         footer: {
-            text: "Auteursrecht © %YEAR% | ZsMWebDev | Márku Zsolt",
+            text: "Auteursrecht © %YEAR% | ZsMWebDev | Zsolt Márku",
         },
     },
 };

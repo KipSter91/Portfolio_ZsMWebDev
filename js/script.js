@@ -15,7 +15,7 @@ let navLinks = document.querySelectorAll("header nav a");
 // IntersectionObserver configuration
 const observerOptions = {
   root: null, // Observe the entire viewport
-  threshold: 0.7, // Trigger when 60% of the section is visible
+  threshold: 0.5, // Trigger when 50% of the section is visible
 };
 
 // Callback function for IntersectionObserver
