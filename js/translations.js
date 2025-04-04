@@ -3,7 +3,7 @@ export const translations = {
     en: {
         siteTitle: "Zsolt Márku",
         nav: {
-            logo: `<img src="images/my_logo.webp" alt="mylogo" />` + "Portfolio",
+            logo: "Portfolio",
             home: "Home",
             about: "About",
             skills: "Skills",
@@ -77,7 +77,7 @@ Join me on this journey, and let’s explore the endless possibilities of web de
     hu: {
         siteTitle: "Márku Zsolt",
         nav: {
-            logo: `<img src="images/my_logo.webp" alt="mylogo" />` + "Portfólió",
+            logo: "Portfólió",
             home: "Főoldal",
             about: "Rólam",
             skills: "Készségek",
@@ -151,7 +151,7 @@ Csatlakozz hozzám ezen az úton, és fedezzük fel együtt a webfejlesztés, a 
     nl: {
         siteTitle: "Zsolt Márku",
         nav: {
-            logo: `<img src="images/my_logo.webp" alt="mylogo" />` + "Portfolio",
+            logo: "Portfolio",
             home: "Home",
             about: "Over Mij",
             skills: "Vaardigheden",

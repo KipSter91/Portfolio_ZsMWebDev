@@ -1,0 +1,25 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio incl. projects",
+  "source": "index.js",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html projects/ampcocutting/index.html projects/merrychristmas/index.html projects/nexatrust/index.html projects/nexatrust/banking_app/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KipSter91/Portfolio_ZsMWebDev.git"
+  },
+  "author": "Zsolt Márku",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KipSter91/Portfolio_ZsMWebDev/issues"
+  },
+  "homepage": "https://github.com/KipSter91/Portfolio_ZsMWebDev#readme",
+  "devDependencies": {
+    "parcel": "^2.14.4",
+    "svgo": "^3.3.2"
+  }
+}
