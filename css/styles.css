@@ -22,7 +22,7 @@
 }
 
 :root .dark {
-  --bg-color: #f8f8f8;
+  --bg-color: #d8d8d8;
   --second-bg-color: rgb(233, 233, 233);
   --text-color: #323946;
   --main-color: rgb(253, 129, 237);
@@ -43,6 +43,7 @@ body {
 }
 
 section {
+  position: relative;
   min-height: 100vh;
   padding: 10rem 9% 2rem;
 }
@@ -132,6 +133,10 @@ section {
 span {
   color: var(--main-color);
   transition: 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.home-content {
+  margin-right: 5rem;
 }
 
 .home-content h1 {
@@ -237,6 +242,7 @@ span {
 }
 
 .skills {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -772,6 +778,10 @@ span {
     display: block;
   }
 
+  .home-content {
+    margin-right: 0rem;
+  }
+
   .navbar {
     position: absolute;
     top: 100%;
@@ -843,5 +853,150 @@ span {
   }
   0% {
     transform: translateY(0);
+  }
+}
+/* Waves */
+
+/* About section */
+.custom-shape-divider-top-1743774280 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1743774280 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 59px;
+  transform: rotateY(180deg);
+}
+
+.custom-shape-divider-top-1743774280 .shape-fill {
+  fill: var(--bg-color);
+}
+
+/** For tablet devices **/
+@media (min-width: 768px) and (max-width: 1023px) {
+  .custom-shape-divider-top-1743774280 svg {
+      width: calc(109% + 1.3px);
+      height: 86px;
+  }
+}
+
+/* Skill section */
+.custom-shape-divider-top-1743774970 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1743774970 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 135px;
+}
+
+.custom-shape-divider-top-1743774970 .shape-fill {
+  fill: var(--second-bg-color);
+}
+
+/** For tablet devices **/
+@media (min-width: 768px) and (max-width: 1023px) {
+  .custom-shape-divider-top-1743774970 svg {
+      width: calc(109% + 1.3px);
+      height: 86px;
+  }
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+  .custom-shape-divider-top-1743774970 svg {
+      width: calc(100% + 1.3px);
+      height: 79px;
+  }
+}
+
+/* Portfolio section */
+.custom-shape-divider-top-1743775153 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1743775153 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 135px;
+  transform: rotateY(180deg);
+}
+
+.custom-shape-divider-top-1743775153 .shape-fill {
+  fill: var(--bg-color);
+}
+
+/** For tablet devices **/
+@media (min-width: 768px) and (max-width: 1023px) {
+  .custom-shape-divider-top-1743775153 svg {
+      width: calc(109% + 1.3px);
+      height: 86px;
+  }
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+  .custom-shape-divider-top-1743775153 svg {
+      width: calc(100% + 1.3px);
+      height: 79px;
+  }
+}
+
+/* Contact section */
+.custom-shape-divider-top-1743775260 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1743775260 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 135px;
+}
+
+.custom-shape-divider-top-1743775260 .shape-fill {
+  fill: var(--second-bg-color);
+}
+
+/** For tablet devices **/
+@media (min-width: 768px) and (max-width: 1023px) {
+  .custom-shape-divider-top-1743775260 svg {
+      width: calc(109% + 1.3px);
+      height: 86px;
+  }
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+  .custom-shape-divider-top-1743775260 svg {
+      width: calc(100% + 1.3px);
+      height: 41px;
   }
 }

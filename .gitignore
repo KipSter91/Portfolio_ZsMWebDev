@@ -1,0 +1,62 @@
+# Node modules
+node_modules/
+
+# Parcel output
+dist/
+.cache/
+.parcel-cache/
+
+# VS Code editor config
+.vscode/
+*.code-workspace
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# OS-specifikus fájlok
+.DS_Store
+Thumbs.db
+
+# Environment files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Dependency Lockfiles (ha csak egy csomagkezelőt használsz, csak azt hagyd meg)
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Output mappák más build tooloktól (ha használsz mást is néha)
+build/
+out/
+coverage/
+
+# Jest / teszt cache (ha valaha használnál tesztelést)
+coverage/
+jest.cache/
+*.test.js.snap
+
+# IDE specifikus fájlok
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# MacOS swap/temporary
+.AppleDouble
+.LSOverride
+
+# Windows
+ehthumbs.db
+Icon?
+Desktop.ini
+
+# Linux
+*~

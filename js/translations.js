@@ -3,7 +3,7 @@ export const translations = {
     en: {
         siteTitle: "Zsolt Márku",
         nav: {
-            logo: `<img src="images/my_logo.png" alt="mylogo" />` + "Portfolio",
+            logo: `<img src="images/my_logo.webp" alt="mylogo" />` + "Portfolio",
             home: "Home",
             about: "About",
             skills: "Skills",
@@ -14,7 +14,7 @@ export const translations = {
             name: "Zsolt Márku",
             hello: "Hello, It's Me",
             tagline: "And I'm a " + `<span id="typed-effect"></span>`,
-            description: `Welcome to my portfolio! <br> I'm a full-stack web developer passionate about building seamless web solutions and exploring the potential of machine learning and artificial intelligence.`,
+            description: `Welcome to my portfolio! <br> I'm a web developer passionate about building seamless web solutions and exploring the potential of artificial intelligence.`,
         },
         about: {
             title: "About " + `<span>Me</span>`,
@@ -77,7 +77,7 @@ Join me on this journey, and let’s explore the endless possibilities of web de
     hu: {
         siteTitle: "Márku Zsolt",
         nav: {
-            logo: `<img src="images/my_logo.png" alt="mylogo" />` + "Portfólió",
+            logo: `<img src="images/my_logo.webp" alt="mylogo" />` + "Portfólió",
             home: "Főoldal",
             about: "Rólam",
             skills: "Készségek",
@@ -151,7 +151,7 @@ Csatlakozz hozzám ezen az úton, és fedezzük fel együtt a webfejlesztés, a 
     nl: {
         siteTitle: "Zsolt Márku",
         nav: {
-            logo: `<img src="images/my_logo.png" alt="mylogo" />` + "Portfolio",
+            logo: `<img src="images/my_logo.webp" alt="mylogo" />` + "Portfolio",
             home: "Home",
             about: "Over Mij",
             skills: "Vaardigheden",

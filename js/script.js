@@ -65,7 +65,7 @@ ScrollReveal(scrollRevealConfig).reveal(".home-content h1", {
   origin: "left",
 });
 ScrollReveal(scrollRevealConfig).reveal(
-  ".about-content, .about-img, .home-img, .skills-column, .portfolio-container, .contact, .contact h2",
+  ".about-content, .about-img, .home-img, .skills-column, .portfolio-container, .form, .contact h2",
   { origin: "bottom" }
 );
 
