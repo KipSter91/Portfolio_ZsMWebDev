@@ -2,21 +2,21 @@
 const typedContent = {
   en: [
     "Warehouse Manager",
-    "Full-stack Webdeveloper",
+    "Web Developer",
     "Husband (of Barbara Márku)",
     "Traveller",
     "Video Game Fanatic... :)",
   ],
   hu: [
     "Raktárigazgató",
-    "Full-stack webfejlesztő",
+    "Webfejlesztő",
     "Férj (Márku Barbarának)",
     "Világutazó",
     "Videojáték fanatikus... :)",
   ],
   nl: [
     "Warehouse Manager",
-    "Full-stack Webontwikkelaar",
+    "Webontwikkelaar",
     "Echtgenoot (van Barbara Márku)",
     "Wereldreiziger",
     "Videospel fanatiek... :)",
