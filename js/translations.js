@@ -88,7 +88,7 @@ Join me on this journey, and let’s explore the endless possibilities of web de
             name: "Márku Zsolt",
             hello: "Helló, ez én lennék",
             tagline: "És én egy " + `<span id="typed-effect"></span>` + " vagyok",
-            description: "Üdvözöllek a portfóliómban! <br> Full-stack webfejlesztő vagyok, aki szenvedéllyel épít felhasználóbarát webes megoldásokat, és elkötelezett a gépi tanulás és a mesterséges intelligencia lehetőségeinek felfedezése iránt.",
+            description: "Üdvözöllek a portfóliómban! <br> Webfejlesztő vagyok, aki szenvedéllyel épít felhasználóbarát webes megoldásokat, és elkötelezett a gépi tanulás és a mesterséges intelligencia lehetőségeinek felfedezése iránt.",
         },
         about: {
             title: "Röviden " + `<span>Rólam</span>`,
@@ -162,7 +162,7 @@ Csatlakozz hozzám ezen az úton, és fedezzük fel együtt a webfejlesztés, a 
             name: "Zsolt Márku",
             hello: "Hallo, Ik ben het",
             tagline: "En ik ben een " + `<span id="typed-effect"></span>`,
-            description: `Welkom op mijn portfolio! <br> Ik ben een full-stack webontwikkelaar met een passie voor het bouwen van gebruiksvriendelijke weboplossingen en het verkennen van de mogelijkheden van machine learning en kunstmatige intelligentie.`,
+            description: `Welkom op mijn portfolio! <br> Ik ben een webontwikkelaar met een passie voor het bouwen van gebruiksvriendelijke weboplossingen en het verkennen van de mogelijkheden van machine learning en kunstmatige intelligentie.`,
         },
         about: {
             title: "Over " + `<span>Mij</span>`,

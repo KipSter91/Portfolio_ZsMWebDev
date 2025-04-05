@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" type="image/png" href="img/icon2.png" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>NexaTrust Bank | Trust in Tomorrow</title>
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <img
+          src="img/icon2.webp"
+          alt="NexaTrust logo"
+          class="nav__logo"
+          id="logo"
+          designer="Zsolt Márku"
+          data-version-number="1.0.0"
+        />
+        <ul class="nav__links">
+          <li class="nav__item">
+            <a class="nav__link" href="#section--1">Features</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#section--2">Operations</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#section--3">Testimonials</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="banking_app/index.html">Login</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header__title">
+        <!-- <h1 onclick="alert('HTML Event')"> -->
+        <!-- Alert box -->
+        <h1>
+          Your
+          <!-- Green highlight effect -->
+          <span class="highlight">trusted</span>
+          partner in<br />
+          <span class="highlight">banking</span>
+        </h1>
+        <h4>Simplify your finances with NexaTrust.</h4>
+        <button class="btn--text btn--scroll-to">
+          Discover more &DownArrow;
+        </button>
+        <img
+          src="img/montage.webp"
+          class="header__img"
+          alt="Minimalist bank items"
+        />
+      </div>
+    </header>
+
+    <section class="section" id="section--1">
+      <div class="section__title">
+        <h2 class="section__description">Features</h2>
+        <h3 class="section__header">Your financial future starts here.</h3>
+      </div>
+
+      <div class="features">
+        <img
+          src="img/computer-lazy.webp"
+          data-src="img/computer.webp"
+          alt="Computer"
+          class="features__img lazy-img"
+        />
+        <div class="features__feature">
+          <div class="features__icon">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-monitor"></use>
+            </svg>
+          </div>
+          <h5 class="features__header">100% digital bank</h5>
+          <p>
+            Welcome to NexaTrust Bank: Your 100% Digital Banking Solution.
+            Seamlessly manage your finances anytime, anywhere, with our
+            innovative digital platform.
+          </p>
+        </div>
+
+        <div class="features__feature">
+          <div class="features__icon">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-trending-up"></use>
+            </svg>
+          </div>
+          <h5 class="features__header">Watch your money grow</h5>
+          <p>
+            With our innovative digital banking solutions, your money doesn't
+            just sit idle – it grows. Whether you're saving for the future,
+            investing for retirement, or planning for a major purchase, our
+            range of tailored products and expert guidance ensure that your
+            money is always working for you. Watch your money grow with
+            NexaTrust Bank and take control of your financial journey today.
+          </p>
+        </div>
+        <img
+          src="img/monsoon_plant-lazy.webp"
+          data-src="img/monsoon_plant.webp"
+          alt="Plant"
+          class="features__img lazy-img"
+        />
+
+        <img
+          src="img/card-lazy.webp"
+          data-src="img/card.webp"
+          alt="Credit card"
+          class="features__img lazy-img"
+        />
+        <div class="features__feature">
+          <div class="features__icon">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-credit-card"></use>
+            </svg>
+          </div>
+          <h5 class="features__header">Free debit card included</h5>
+          <p>
+            Enjoy the convenience and flexibility of managing your finances with
+            our free debit card, included with every NexaTrust Bank account. Say
+            goodbye to hidden fees and hello to seamless transactions, whether
+            you're shopping online, dining out, or traveling abroad. With our
+            secure and reliable debit card, you can access your funds anytime,
+            anywhere, without the worry of extra charges. Experience banking
+            freedom with NexaTrust Bank – your trusted partner for hassle-free
+            financial management.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="section--2">
+      <div class="section__title">
+        <h2 class="section__description">Operations</h2>
+        <h3 class="section__header">Simplicity without compromise.</h3>
+      </div>
+
+      <div class="operations">
+        <div class="operations__tab-container">
+          <button
+            class="btn operations__tab operations__tab--1 operations__tab--active"
+            data-tab="1"
+          >
+            <span>01</span>Instant Transfers
+          </button>
+          <button class="btn operations__tab operations__tab--2" data-tab="2">
+            <span>02</span>Instant Loans
+          </button>
+          <button class="btn operations__tab operations__tab--3" data-tab="3">
+            <span>03</span>Instant Closing
+          </button>
+        </div>
+        <div
+          class="operations__content operations__content--1 operations__content--active"
+        >
+          <div class="operations__icon operations__icon--1">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-send"></use>
+            </svg>
+          </div>
+          <h5 class="operations__header">
+            Effortlessly transfer funds instantly to anyone, without any hidden
+            fees or hassle.
+          </h5>
+          <p>
+            Experience seamless money transfers with NexaTrust Bank's instant
+            transfer service. Send funds to anyone, anywhere, without any fees
+            or complications. Enjoy the convenience and simplicity of
+            transferring money effortlessly.
+          </p>
+        </div>
+
+        <div class="operations__content operations__content--2">
+          <div class="operations__icon operations__icon--2">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-home"></use>
+            </svg>
+          </div>
+          <h5 class="operations__header">
+            Unlock your dreams: instant loans for your home and beyond!
+          </h5>
+          <p>
+            Get the keys to your dream home faster than ever with NexaTrust
+            Bank's instant loan options. Whether you're buying your first home,
+            investing in property, or fulfilling any other dream, our quick and
+            hassle-free loan process makes it possible. Say goodbye to long
+            waits and complicated paperwork – with NexaTrust, your dreams are
+            within reach.
+          </p>
+        </div>
+        <div class="operations__content operations__content--3">
+          <div class="operations__icon operations__icon--3">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-trash"></use>
+            </svg>
+          </div>
+          <h5 class="operations__header">
+            No longer need your account? No problem! Close it instantly.
+          </h5>
+          <p>
+            Account closure made simple! Say goodbye to lengthy procedures and
+            hassle – at NexaTrust Bank, you can close your account instantly,
+            hassle-free.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="section--3">
+      <div class="section__title section__title--testimonials">
+        <h2 class="section__description">Not sure yet?</h2>
+        <h3 class="section__header">
+          Millions simplifying their lives with NexaTrust Bank.
+        </h3>
+      </div>
+
+      <div class="slider">
+        <div class="slide slide--1">
+          <div class="testimonial">
+            <h5 class="testimonial__header">Seamless Banking Solutions</h5>
+            <blockquote class="testimonial__text">
+              Switching to NexaTrust Bank was one of the best decisions I've
+              made. Their seamless online platform and convenient mobile app
+              have made banking effortless and enjoyable.
+            </blockquote>
+            <address class="testimonial__author">
+              <img src="img/bma.webp" alt="" class="testimonial__photo" />
+              <h6 class="testimonial__name">Barbara Márku</h6>
+              <p class="testimonial__location">Rotterdam, NL</p>
+            </address>
+          </div>
+        </div>
+
+        <div class="slide slide--2">
+          <div class="testimonial">
+            <h5 class="testimonial__header">Life-Changing Experience</h5>
+            <blockquote class="testimonial__text">
+              NexaTrust Bank has truly transformed the way I manage my finances.
+              With their user-friendly interface and top-notch customer service,
+              I feel confident and empowered in my financial decisions.
+            </blockquote>
+            <address class="testimonial__author">
+              <img src="img/gyf.webp" alt="" class="testimonial__photo" />
+              <h6 class="testimonial__name">Győző Folláth</h6>
+              <p class="testimonial__location">Linschoten, NL</p>
+            </address>
+          </div>
+        </div>
+
+        <div class="slide slide--3">
+          <div class="testimonial">
+            <h5 class="testimonial__header">Exceptional Service</h5>
+            <blockquote class="testimonial__text">
+              I've been banking with NexaTrust for years, and I continue to be
+              impressed by their exceptional service. From personalized
+              assistance to innovative features, NexaTrust Bank always goes
+              above and beyond to meet my banking needs.
+            </blockquote>
+            <address class="testimonial__author">
+              <img src="img/wbe.webp" alt="" class="testimonial__photo" />
+              <h6 class="testimonial__name">Wilko Beukers</h6>
+              <p class="testimonial__location">Marly, CH</p>
+            </address>
+          </div>
+        </div>
+        <button class="slider__btn slider__btn--left">&larr;</button>
+        <button class="slider__btn slider__btn--right">&rarr;</button>
+        <div class="dots"></div>
+      </div>
+    </section>
+
+    <section class="section section--log-in">
+      <div class="section__title">
+        <h3 class="section__header">
+          The best day to join NexaTrust Bank was yesterday. The second best is
+          today!
+        </h3>
+      </div>
+      <button class="btn btn--login" data-href="banking_app/index.html">
+        Login to your account!
+      </button>
+    </section>
+
+    <footer class="footer">
+      <ul class="footer__nav">
+        <li class="footer__item">
+          <a class="footer__link" href="#">About</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Pricing</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Terms of Use</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Privacy Policy</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Careers</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Blog</a>
+        </li>
+        <li class="footer__item">
+          <a
+            class="footer__link"
+            id="portfolio"
+            href="http://www.zsoltmarku.com"
+            >Contact Us</a
+          >
+        </li>
+      </ul>
+      <img src="img/icon2.webp" alt="Logo" class="footer__logo" />
+    </footer>
+  </body>
+</html>

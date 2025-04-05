@@ -6,7 +6,7 @@
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
     "start": "parcel index.html",
-    "build": "parcel build index.html projects/ampcocutting/index.html projects/merrychristmas/index.html projects/nexatrust/index.html projects/nexatrust/banking_app/index.html"
+    "build": "parcel build index.html"
   },
   "repository": {
     "type": "git",
